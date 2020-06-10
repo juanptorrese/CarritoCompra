@@ -44,4 +44,24 @@ public class CarritoCompra {
 	 public void empty() {
 		 items.clear();
 	 }
+	
+	 public float sumaPrecio(float p1, float p2) {
+        return p1 + p2;
+    }
+    
+    public float restaPrecio(float p1, float total) {
+        return total - p1;
+    }
+    
+    public float cargoEnvioDomicilio(float total, float cargoDomicilio) {
+        return total + cargoDomicilio;
+    }
+    
+    public float cargoEnvioSucursal(float total, float cargoSucursal) {
+        return total + cargoSucursal;
+    }
+    
+    public float sumaIntereses(float total, float cargoInteres){
+        return total + cargoInteres;
+    }
 }
