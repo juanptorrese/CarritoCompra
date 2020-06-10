@@ -20,7 +20,7 @@ public class CarritoCompra {
 	}
 
 
-	public double getBalance() {
+	public double getTotalCarrito() {
 		 double balance = 0;
 		 for (Iterator i = items.iterator(); i.hasNext();) {
 		 Producto item = (Producto)i.next();
@@ -37,7 +37,7 @@ public class CarritoCompra {
 		 items.remove(item);
 	 }
 
-	 public int getItemCount() {
+	 public int getCantidadItems() {
 		 return items.size();
 	 }
 
@@ -45,9 +45,9 @@ public class CarritoCompra {
 		 items.clear();
 	 }
 	
-	 public float sumaPrecio(float p1, float p2) {
-        return p1 + p2;
-    }
+//	 public float sumaPrecio(float p1, float p2) {
+//        return p1 + p2;
+//    }
     
     public float restaPrecio(float p1, float total) {
         return total - p1;

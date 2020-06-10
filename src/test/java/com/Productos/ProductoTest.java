@@ -30,7 +30,7 @@ public class ProductoTest extends TestCase{
 	
 	
 	/**
-	 * Test del metodo getCode , de la clase Producto.
+	 * SE DEBE PODER OBTENER EL CODIGO DEL PRODUCTO
 	 */
 	public void testGetCodigo() {
 		String expResult = "P001";
@@ -38,26 +38,23 @@ public class ProductoTest extends TestCase{
 		assertEquals(expResult, result);
 	 }
 	 
-
-	 public void testGetTitulo(){
-		String resultadoEsperado = "Notebook Lenovo L340 15,6'";
-		String resultado = prod1.getTitulo();
-		assertEquals(resultadoEsperado, resultado);
-	}
-
+	/**
+	 * SE DEBE PODER OBTENER LA DESCRIPCION DEL PRODUCTO
+	 */
 	 public void testGetDescripcion(){
 		String resultadoEsperado = "Notebook Gamer Lenovo L340 15,6' Core i5 + 9300H 8GB 1TB + 256NVMe GTX 1050 #GB Win 10";
 		String resultado = prod1.getDescripcion();
 		assertEquals(resultadoEsperado, resultado);
 	 }
  
-
+	 /**
+	  * SE DEBE PODER OBTENER EL PRECIO DE UN PRODUCTO
+	  */
 	 public void testGetPrecio(){
 		 double resultadoEsperado = 92.416;
 		 double resultado = prod1.getPrecio();
 		 assertEquals(resultadoEsperado, resultado);
 	 }
 
- 
 
 }
